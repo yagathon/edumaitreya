@@ -36,3 +36,311 @@
     transform: rotate(360deg);
   }
 }
+
+/* Miscellanous */
+
+.mt-10 {
+  margin-top: 6rem;
+}
+
+.primary-1 {
+  color: #26a01a;
+}
+
+.primary-2 {
+  color: #fcb72b;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fitting-content {
+  position: relative;
+  height: auto;
+}
+
+.text-sm {
+  font-size: smaller;
+}
+
+.title-container {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.title-container h2{
+  transition: 0.2s;
+}
+
+.title-container h2:hover{
+  color: #fcb72b;
+}
+
+.title-container h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 4px;
+  background-color: #26a01a;
+  bottom: 0;
+  left: calc(50% - 65px);
+  border-radius: 50px;
+}
+
+.panel-accr {
+  border: none;
+}
+
+/* Slider */
+
+.img-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.img-slider-container {
+  padding: 0 2vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.img-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.img-slider-card {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.img-slider-card-border {
+  flex: 0 0 auto;
+  width: 45px;
+  height: 140px;
+}
+
+.img-slider-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.prev-slider,
+.next-slider {
+  color : #26a01a;
+  position: absolute;
+  border: none;
+  width: 5vw;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.prev-slider {
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  left: 0;
+}
+
+.next-slider {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  right: 0;
+}
+
+/* Navigation Bar */
+
+.logo-nav {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-menu {
+  color: black;
+  text-align: center;
+  margin-bottom: -4px;
+  transition: 0.4s;
+}
+
+.active-nav {
+  color: #fcb72b;
+  transition: 0.4s;
+}
+
+.nav-menu-item {
+  font-weight: 300;
+  color: black;
+  transition: 0.4s;
+}
+
+.active-nav-menu-item {
+  font-weight: 500;
+  color: #fcb72b;
+  transition: 0.4s;
+}
+
+.selection-active-nav {
+  width: 50%;
+  height: 4px;
+  background-color: #26a01a;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.selection-nav {
+  width: 50%;
+  height: 4px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.nav-menu-item:hover {
+  font-weight: 500;
+  background-color: #26a01a;
+  color: white;
+  transition: 0.4s;
+}
+
+.active-nav-menu-item:hover {
+  font-weight: 500;
+  background-color: #26a01a;
+  color: white;
+  transition: 0.4s;
+}
+
+.selected-nav:hover .active-nav {
+  color: #26a01a;
+}
+
+.selected-nav:hover .selection-active-nav {
+  background-color: #fcb72b;
+}
+
+.unselected-nav:hover .nav-menu {
+  color: #fcb72b;
+}
+
+.unselected-nav:hover .selection-nav {
+  background-color: #26a01a;
+}
+
+/* Banner */
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.card-1 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  transition: 0.9s;
+}
+
+.card-2 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  transition: 0.9s;
+}
+
+.btn-1 {
+  background-color: #26a01a;
+  transition: 0.4s;
+}
+
+.btn-2 {
+  background-color: #fcb72b;
+  transition: 0.4s;
+}
+
+.btn-1:hover {
+  background-color: #fcb72b;
+  color: white;
+}
+
+.btn-2:hover {
+  background-color: #26a01a;
+  color: white;
+}
+
+.card-1:hover {
+  background-color: #282c34;
+  color: white;
+}
+
+.card-2:hover {
+  background-color: #282c34;
+  color: white;
+}
+
+/* About */
+
+/* Program */
+
+.program-container {
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: black;
+}
+
+.program-img {
+  width: 100%;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.program-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.program-desc {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Footer */
+
+.logo-footer {
+  width: 70px;
+  height: 70px;
+}
